@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build && next export && firebase deploy",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "vercel-build": "prisma generate && prisma migrate deploy && next build"
   },
   "dependencies": {
     "clsx": "^2.1.1",
